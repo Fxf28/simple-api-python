@@ -1,2 +1,14 @@
+# Credential
 issoverhead/config.py
-issoverhead/__pycache__/*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.env/
+
+# IDE settings
+.vscode/
+.idea/
