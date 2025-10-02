@@ -34,6 +34,24 @@ Check if the **International Space Station (ISS)** is above your location at nig
 - Uses [Sunrise-Sunset API](https://sunrise-sunset.org/api)  
 - Sends email via Gmail SMTP.
 
+---
+
+### 5. **quizzler-app/**
+A **quiz game** that fetches trivia questions from the [Open Trivia Database API](https://opentdb.com/).  
+- Built with **Tkinter GUI**.  
+- Displays True/False questions with interactive buttons.  
+- Tracks and displays score in real-time.  
+- Includes a **restart feature** when the quiz ends.  
+
+**Project structure:**
+- `question_model.py` → Question class  
+- `data.py` → Fetches quiz data from API  
+- `quiz_brain.py` → Handles quiz logic  
+- `ui.py` → Tkinter interface  
+- `main.py` → Entry point  
+
+---
+
 ## Setup & Run
 
 ### 1. Clone this repo:
@@ -50,8 +68,7 @@ cd simple-api-python
 python -m venv venv
 source venv/bin/activate   # Linux / macOS
 venv\Scripts\activate      # Windows
-```
-```
+
 # With conda
 conda create --name myenv
 conda activate myenv
@@ -62,7 +79,7 @@ conda activate myenv
 ### 3. Install dependencies
 ```
 pip install -r requirements.txt
-#or
+# or
 conda install --yes --file requirements.txt
 ```
 
@@ -79,10 +96,15 @@ python main.py
 cd kanye-quotes
 python main.py
 ```
+```
+# Example: run the Quizzler App
+cd quizzler-app
+python main.py
+```
 
 ---
 
-## Special Setup Notes
+### Special Setup Notes
 For issoverhead/, create a config.py file inside the folder with your details:
 ```
 MY_LAT = 51.5074      # Your latitude
@@ -90,6 +112,5 @@ MY_LNG = -0.1278      # Your longitude
 EMAIL = "your_email@example.com"
 PASSWORD = "your_app_password"
 ```
-> Make sure config.py is in .gitignore so you don’t expose your credentials.
 
----
+> Make sure config.py is in .gitignore so you don’t expose your credentials.
